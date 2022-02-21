@@ -19,10 +19,10 @@ function createTable(data){
     appElement.appendChild(aHeading)
     var aTable = document.createElement("table")
     appElement.appendChild(aTable)
-    aTable.appendChild(createRow(data[0].name, data[0].points))
-    aTable.appendChild(createRow(data[1].name, data[1].points))
-    aTable.appendChild(createRow(data[2].name, data[2].points))
-    aTable.appendChild(createRow(data[3].name, data[3].points))
+    aTable.appendChild(createRow(data[0].name, data[0].points, data[0].player))
+    aTable.appendChild(createRow(data[1].name, data[1].points, data[1].player))
+    aTable.appendChild(createRow(data[2].name, data[2].points, data[2].player))
+    aTable.appendChild(createRow(data[3].name, data[3].points, data[3].player))
 
 }
 function createRow(name, points, player){
