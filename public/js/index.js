@@ -1,5 +1,7 @@
 age();
 
+
+
 function age(){
     var xhr = new XMLHttpRequest()
     xhr.open("GET", "/js/data.json")
@@ -12,6 +14,9 @@ function age(){
 
 function createTable(data){
     var appElement = document.getElementById("app")
+    var aHeading = document.createElement("h3")
+    aHeading.innerHTML = "Highscore"
+    appElement.appendChild(aHeading)
     var aTable = document.createElement("table")
     appElement.appendChild(aTable)
     aTable.appendChild(createRow(data[0].name, data[0].points))
