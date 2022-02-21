@@ -29,3 +29,8 @@ h3 {
 #welcome {
   text-align: center;
 }
+#highscore {
+  text-align: center;
+  border-color: black;
+  border: 2mm;
+}
