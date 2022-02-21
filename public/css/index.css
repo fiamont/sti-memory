@@ -29,6 +29,11 @@ h3 {
 #welcome {
   text-align: center;
 }
+
+.container {
+  flex-direction: row;
+  justify-content: center;
+}
 #highscore {
   text-align: center;
   justify-content: center;
