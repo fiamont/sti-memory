@@ -22,12 +22,14 @@ function createTable(data){
     aTable.appendChild(createRow(data[0].name, data[0].points))
     aTable.appendChild(createRow(data[1].name, data[1].points))
     aTable.appendChild(createRow(data[2].name, data[2].points))
+    aTable.appendChild(createRow(data[3].name, data[3].points))
 
 }
-function createRow(name, points){
+function createRow(name, points, player){
     var aRow = document.createElement("tr")
     aRow.appendChild(createCell(name))
     aRow.appendChild(createCell(points))
+    aRow.appendChild(createCell(player))
     return aRow;
 }
 function createCell(content){

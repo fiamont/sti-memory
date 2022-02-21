@@ -1,14 +1,23 @@
 [
     {
+        "name": "Game",
+        "points": "Points",
+        "player": "Player"
+    },
+    {
         "name": "Tetris",
-        "points": 56
+        "points": 56,
+        "player": "Anna"
+
     },
     {
         "name": "Memory",
-        "points": 50
+        "points": 50,
+        "player": "Stina"
     },
     {
         "name": "Snake",
-        "points": 48
+        "points": 48,
+        "player": "Patrik"
     }
 ]
