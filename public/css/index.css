@@ -31,6 +31,11 @@ h3 {
 }
 #highscore {
   text-align: center;
-  border-color: black;
-  border: 2mm;
+}
+table {
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 5px;
+  border-style: double;
 }
