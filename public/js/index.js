@@ -4,8 +4,9 @@ age();
 
 function age(){
     var xhr = new XMLHttpRequest()
-    xhr.open("GET", "http://localhost:3001/highscore")
-    /* xhr.open("GET", "/js/data.json") */
+    // xhr.open("GET", "http://localhost:3001/highscore")
+    xhr.open("GET", "http://fiamont-backend.herokuapp.com/highscore")
+    // xhr.open("GET", "/js/data.json")
     xhr.onload = function() {
         var data = JSON.parse(this.response);
         createTable(data);
@@ -16,7 +17,7 @@ function age(){
 function createTable(data){
     var appElement = document.getElementById("highscore")
     var aHeading = document.createElement("h3")
-    aHeading.innerHTML = "Highscore"
+    aHeading.innerHTML = "HIGHSCORE"
     appElement.appendChild(aHeading)
     var aTable = document.createElement("table")
     appElement.appendChild(aTable)
