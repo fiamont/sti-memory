@@ -22,10 +22,17 @@ function createTable(data){
 }
 
 function createRow(name, points){
-
-
+    var aRow = document.createElement("tr")
+    aRow.appendChild(createCell(name))
+    aRow.appendChild(createCell(points))
+    return aRow;
 }
+
 function createCell(content){
+    var aCell = document.createElement("td")
+    aCell.innerHTML = content
+    return aCell;
+
 
 }
 
