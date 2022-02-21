@@ -33,11 +33,13 @@ h3 {
 .container {
   flex-direction: row;
   justify-content: center;
+  display: flex;
+  text-align: center;
 }
-#highscore {
+/* #highscore {
   text-align: center;
   justify-content: center;
-}
+} */
 table {
   text-align: center;
   justify-content: center;
