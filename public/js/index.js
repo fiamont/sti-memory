@@ -4,7 +4,8 @@ age();
 
 function age(){
     var xhr = new XMLHttpRequest()
-    xhr.open("GET", "/js/data.json")
+    xhr.open("GET", "http://localhost:3001/highscore")
+    /* xhr.open("GET", "/js/data.json") */
     xhr.onload = function() {
         var data = JSON.parse(this.response);
         createTable(data);
