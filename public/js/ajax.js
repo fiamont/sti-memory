@@ -2,7 +2,6 @@ var tableData = [
     {name:"Tetris", points:56}
     ,{name:"Memory", points:50}
     ,{name:"Snake", points:48}
-    ,{name:"Breakpoint", points:33}
 ]
 tableData = JSON.stringify(tableData)
 console.log(tableData)
