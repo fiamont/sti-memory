@@ -6,11 +6,11 @@ const PORT = process.env.PORT || 3000
 
 const app = express()
 app.use('healthcheck', require('./routes/healthcheck.routes'));
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'public', 'faviconSofia.ico')))
 app.use(express.static('public'))
 
-app.get('/', function(req, res){
-    res.sendFile(__dirname + "/public/index.html")
+app.get('/highscore', function(req, res){
+    res.sendFile(__dirname + "./public/index.html")
 })
 
 app.listen(PORT, function(){

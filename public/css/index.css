@@ -1,0 +1,31 @@
+/* My code*/
+
+body {
+  background-color: antiquewhite;
+  /* background-image: url(../images/background2.jpg);
+  background-position: center center;
+  background-size: cover; */
+}
+
+.topnav {
+  background-color: rgb(253, 209, 152);
+  text-align: center;
+  overflow: hidden;
+}
+.navtext {
+  text-decoration: none;
+  color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 5vw;
+  font-weight: bold;
+}
+h3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.playGame {
+  text-align: center;
+  flex-direction: row;
+}
+#welcome {
+  text-align: center;
+}
