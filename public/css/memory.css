@@ -1,15 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: antiquewhite;
 }
 .topnav {
-  background-color: rgb(253, 209, 152);
+  background-color: rgb(19, 8, 119);
   text-align: center;
   overflow: hidden;
 }
 .navtext {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 5vw;
   font-weight: bold;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  background-color: antiquewhite;
+}
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
 }
