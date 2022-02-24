@@ -2,22 +2,29 @@
     {
         "name": "Game",
         "points": "Points",
-        "player": "Player"
+        "player": "Player",
+        "image": "https://openclipart.org/image/400px/173367"
     },
     {
         "name": "Tetris",
         "points": 56,
-        "player": "Anna"
+        "player": "Anna",
+        "image": "https://openclipart.org/image/400px/173367"
+
 
     },
     {
         "name": "Memory",
         "points": 50,
-        "player": "Stina"
+        "player": "Stina",
+        "image": "https://openclipart.org/image/400px/173367"
+
     },
     {
         "name": "Snake",
         "points": 48,
-        "player": "Patrik"
+        "player": "Patrik",
+        "image": "https://openclipart.org/image/400px/173367"
+
     }
 ]
