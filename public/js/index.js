@@ -18,6 +18,8 @@ function createTable(data){
     var appElement = document.getElementById("highscore")
     var aHeading = document.createElement("h3")
     aHeading.innerHTML = "HIGHSCORE"
+    var aPicture = document.createElement("image")
+    aPicture.innerHTML = "https://openclipart.org/image/400px/173367"
     appElement.appendChild(aHeading)
     var aTable = document.createElement("table")
     appElement.appendChild(aTable)
