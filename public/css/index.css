@@ -1,3 +1,16 @@
+body {
+  background-color: aliceblue;
+  /* background-image: url("https://img.freepik.com/free-vector/blue-sunburst-abstract-vintage-background_349999-40.jpg?w=900"); */
+
+  background-image: url("https://img.freepik.com/free-vector/flat-comic-style-background_23-2148882944.jpg?t=st=1645743388~exp=1645743988~hmac=542ef864dc8f6dcb56a1f249c2b73fc1c313e8eefc5a41ff61ed63a1a83cd802&w=900");
+
+  /* background-image: url("https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .topnav {
   display: flex;
   justify-content: center;
