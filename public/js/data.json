@@ -3,7 +3,7 @@
         "name": "Game",
         "points": "Points",
         "player": "Player",
-        "image": "https://openclipart.org/image/400px/173367"
+        "image": "C:/Java/kursenJavaScript/sti-frontend/public/images/memory\birds.png"
     },
     {
         "name": "Tetris",
