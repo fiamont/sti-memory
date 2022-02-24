@@ -1,2 +1,3 @@
 # sti-frontend
-My first frontend application
+
+A game of Memory!

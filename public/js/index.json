@@ -1,0 +1,26 @@
+[
+    {
+        "name": "bubblesBig",
+        "image": "../images/backgrounds/bubblesBig.jpg"
+    },
+    {        
+        "name": "bubblesSmall",
+        "image": "../images/backgrounds/bubblesSmall.jpg"
+    },
+    {
+        "name": "cloud",
+        "image": "../images/backgrounds/cloud.png"
+    },
+    {
+        "name": "graySquare",
+        "image": "../images/backgrounds/graySquare.png"
+    },
+    {
+        "name": "map",
+        "image": "../images/backgrounds/map.png"
+    },
+    {
+        "name": "memory",
+        "image": "../images/backgrounds/memory.png"
+    }
+]

@@ -1,51 +1,21 @@
-/* My code*/
-
-body {
-  background-color: antiquewhite;
-  background-image: url(../images/background2.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 .topnav {
-  background-color: rgb(19, 8, 119);
+  display: flex;
+  justify-content: center;
   text-align: center;
-  overflow: hidden;
 }
-.navtext {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 5vw;
-  font-weight: bold;
+.heading1 {
+  display: flex;
+  justify-content: center;
 }
-h3 {
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-.playGame {
-  text-align: center;
-  flex-direction: row;
-}
-#welcome {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.container {
-  flex-direction: row;
-  justify-content: center;
-  display: flex;
-  text-align: center;
-}
-/* #highscore {
-  text-align: center;
-  justify-content: center;
-} */
-table {
-  text-align: center;
-  justify-content: center;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 8px;
-  padding: 5px;
-  border-style: double;
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
