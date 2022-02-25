@@ -1,27 +1,35 @@
-body {
-  background-color: aliceblue;
-  /* background-image: url("https://img.freepik.com/free-vector/blue-sunburst-abstract-vintage-background_349999-40.jpg?w=900"); */
-
-  /* background-image: url("https://img.freepik.com/free-vector/flat-comic-style-background_23-2148882944.jpg?t=st=1645743388~exp=1645743988~hmac=542ef864dc8f6dcb56a1f249c2b73fc1c313e8eefc5a41ff61ed63a1a83cd802&w=900"); */
-
-  /* background-image: url("https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
-
-  background-image: url("https://img.freepik.com/free-vector/bubbles-water-blue-background-circle-liquid-light-design-clear-soapy-shiny_1284-43454.jpg?w=740");
-
-  background-repeat: no-repeat;
-  background-position: center center;
+html {
+  background: url("https://img.freepik.com/free-vector/flat-comic-style-background_23-2148882944.jpg?t=st=1645743388~exp=1645743988~hmac=542ef864dc8f6dcb56a1f249c2b73fc1c313e8eefc5a41ff61ed63a1a83cd802&w=900")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
-.topnav {
+.heading {
+  font-size: 35px;
   display: flex;
   justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(47, 0, 255),
+    0 0 5px rgb(60, 0, 139);
+  font-family: "Impact", "Charcoal", "sans-serif";
   text-align: center;
 }
-.heading1 {
-  display: flex;
-  justify-content: center;
+
+a {
+  text-decoration: none;
 }
+
+h3 {
+  font-size: 25px;
+  color: rgb(209, 209, 209);
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(47, 0, 255),
+    0 0 5px rgb(60, 0, 139);
+  font-family: "Impact", "Charcoal", "sans-serif";
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -33,4 +41,7 @@ body {
   .container {
     flex-direction: column;
   }
+}
+img.tableLogo {
+  max-width: 40px;
 }
