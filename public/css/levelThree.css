@@ -71,3 +71,10 @@ section {
 .toggleCard {
   transform: rotateY(180deg);
 }
+
+#timer {
+  margin-bottom: 25px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4c12a8;
+}
