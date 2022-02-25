@@ -17,6 +17,10 @@ const getData = () =>[
     {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
     {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
     {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
+    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
+    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
 ];
 
 //Randomize
