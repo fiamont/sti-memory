@@ -1,10 +1,9 @@
-console.log("level2")
+console.log("level3")
 
 const section = document.querySelector('section');
 
 //Generate data
-
-const getData = () =>[
+const getData = () => [
     {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
     {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
     {imgScr: "https://openclipart.org/image/400px/227472", name: "Cat"},
@@ -13,28 +12,37 @@ const getData = () =>[
     {imgScr: "https://openclipart.org/image/400px/314119", name: "Dino"},
     {imgScr: "https://openclipart.org/image/400px/17692", name: "Dog"},
     {imgScr: "https://openclipart.org/image/400px/17692", name: "Dog"},
-    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
-    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
-    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
-    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
-    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
-    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
-    {imgScr: "https://openclipart.org/image/400px/168873", name: "Owl"},
-    {imgScr: "https://openclipart.org/image/400px/168873", name: "Owl"},
+    {imgScr: "https://openclipart.org/image/400px/300661", name: "Dolphin"},
+    {imgScr: "https://openclipart.org/image/400px/300661", name: "Dolphin"},
+    {imgScr: "https://openclipart.org/image/400px/83479", name: "Elephant"},
+    {imgScr: "https://openclipart.org/image/400px/83479", name: "Elephant"},
     {imgScr: "https://openclipart.org/image/400px/169932", name: "Frog"},
     {imgScr: "https://openclipart.org/image/400px/169932", name: "Frog"},
+    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
+    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
+    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
+    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
+    {imgScr: "https://openclipart.org/image/400px/170851", name: "Horse"},
+    {imgScr: "https://openclipart.org/image/400px/170851", name: "Horse"},
+    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
+    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
+    {imgScr: "https://openclipart.org/image/400px/17558", name: "Mouse"},
+    {imgScr: "https://openclipart.org/image/400px/17558", name: "Mouse"},
+    {imgScr: "https://openclipart.org/image/400px/168873", name: "Owl"},
+    {imgScr: "https://openclipart.org/image/400px/168873", name: "Owl"},
+    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {imgScr: "https://openclipart.org/image/400px/173367", name: "Turtle"},
+    {imgScr: "https://openclipart.org/image/400px/173367", name: "Turtle"},
+    {imgScr: "https://openclipart.org/image/400px/314473", name: "Zebra"},
+    {imgScr: "https://openclipart.org/image/400px/314473", name: "Zebra"}
 ];
-
 //Randomize
 const randomize = () => {
     const cardData = getData();
     cardData.sort(() => Math.random() - 0.5)
     return cardData;
-
 }
-
 //Cardgenerator function
 const cardGenerator = () => {
     const cardData = randomize();
@@ -76,7 +84,6 @@ const cardGenerator = () => {
                     card.classList.remove("flipped");
                     card.style.pointerEvents ="none";
                 });
-
             } else {
                 console.log("wrong");
                 flippedCards.forEach((card) => {
@@ -86,10 +93,6 @@ const cardGenerator = () => {
             }
         }
     }
-
-    
-    
-
 }
 
 cardGenerator();
