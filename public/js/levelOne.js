@@ -49,6 +49,7 @@ const cardGenerator = () => {
         back.classList = "back";
         //attach the info to the cards
         face.src = item.imgScr;
+        card.setAttribute("name", item.name);
         //attach the cards to the section
         section.appendChild(card);
         card.appendChild(face);
@@ -64,7 +65,26 @@ const cardGenerator = () => {
     const checkCard = (e) => {
         console.log(e);
         const clickedCard = e.target;
-        console.log(clickedCard);
+        clickedCard.classList.add('flipped');
+        const flippedCards = document.querySelectorAll(".flipped");
+
+        if(flippedCards.length === 2) {
+            if(flippedCards[0].getAttribute("name") === flippedCards[1].getAttribute("name")
+            ) {
+                console.log("match");
+                flippedCards.forEach((card) => {
+                    card.classList.remove("flipped");
+                    card.style.pointerEvents ="none";
+                });
+
+            } else {
+                console.log("wrong");
+                flippedCards.forEach((card) => {
+                    card.classList.remove("flipped");
+                    setTimeout(() => card.classList.remove("toggleCard"), 1000);
+                })
+            }
+        }
     }
 
     
