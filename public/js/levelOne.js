@@ -1,31 +1,76 @@
 console.log("level1")
 
-age();
-
-function age(){
-    var xhr = new XMLHttpRequest()
-    xhr.open("GET", "/js/data.json")
-    xhr.onload = function() {
-        var data = JSON.parse(this.response);
-        createCard(data);
-    }
-    xhr.send()
-}
-
-function createCard(data){
-    var appElement = document.getElementById("levelOne")
-    var aCard = document.createElement("img")
-    appElement.appendChild(aCard)
-    aCard.appendChild(createImage(data[0].image))
-
-}
-
-function createImage(url){
-    var anImage = document.createElement("img")
-    anImage.src=url
-    anImage.classList.add("image")
-    aCell.appendChild(anImage)
-    return anImage;
-}
-
 const section = document.querySelector('section');
+const playerLivesCount = document.querySelector('span');
+const playerLives = 6;
+
+playerLivesCount.textContent = playerLives;
+
+//Generate data
+
+const getData = () =>[
+    {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
+    {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
+    {imgScr: "https://openclipart.org/image/400px/227472", name: "Cat"},
+    {imgScr: "https://openclipart.org/image/400px/227472", name: "Cat"},
+    {imgScr: "https://openclipart.org/image/400px/314119", name: "Dino"},
+    {imgScr: "https://openclipart.org/image/400px/314119", name: "Dino"},
+    {imgScr: "https://openclipart.org/image/400px/17692", name: "Dog"},
+    {imgScr: "https://openclipart.org/image/400px/17692", name: "Dog"},
+    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
+    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
+    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
+    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
+    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
+    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
+];
+
+//Randomize
+const randomize = () => {
+    const cardData = getData();
+    cardData.sort(() => Math.random() - 0.5)
+    return cardData;
+
+}
+
+//Cardgenerator function
+const cardGenerator = () => {
+    const cardData = randomize();
+    console.log(cardData)
+    //Generate the HTML
+    cardData.forEach(item => {
+        const card = document.createElement("div");
+        const face = document.createElement("img");
+        const back = document.createElement("div");
+        card.classList = "card";
+        face.classList = "face";
+        back.classList = "back";
+        //attach the info to the cards
+        face.src = item.imgScr;
+        //attach the cards to the section
+        section.appendChild(card);
+        card.appendChild(face);
+        card.appendChild(back);
+
+        card.addEventListener('click', (e) => {
+            card.classList.toggle('toggleCard');
+            checkCard(e);
+        })
+    })
+
+    //Check cards
+    const checkCard = (e) => {
+        console.log(e);
+        const clickedCard = e.target;
+        console.log(clickedCard);
+    }
+
+    
+    
+
+}
+
+cardGenerator();
+
