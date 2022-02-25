@@ -1,10 +1,12 @@
 console.log("level1")
 
 const section = document.querySelector('section');
+//hämta data från json??: var cardArray = require('.data.json');
 
 //Generate data
 
 const getData = () =>[
+
     {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
     {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
     {imgScr: "https://openclipart.org/image/400px/227472", name: "Cat"},

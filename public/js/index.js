@@ -22,7 +22,7 @@ function createTable(data){
     mainHeading.innerHTML = "Fastest player"
     appElement.appendChild(mainHeading)
 
-    /* var aHeading = document.createElement("h4")
+    var aHeading = document.createElement("h4")
     aHeading.innerHTML = "Level 1"
     appElement.appendChild(aHeading)
 
@@ -40,7 +40,7 @@ function createTable(data){
     appElement.appendChild(anotherTable)
     anotherTable.appendChild(createRow(data[3].time, data[3].player, data[3].image))
     anotherTable.appendChild(createRow(data[1].time, data[1].player, data[1].image))
-    anotherTable.appendChild(createRow(data[2].time, data[2].player, data[2].image)) */
+    anotherTable.appendChild(createRow(data[2].time, data[2].player, data[2].image)) 
 
 
 }
