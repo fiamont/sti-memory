@@ -1,26 +1,20 @@
 [
     {
         "level": "Level 1",
-        "time": 56,
+        "time": 1.5,
         "player": "Robert",
-        "image": "https://openclipart.org/image/400px/281767"
+        "image": "https://openclipart.org/image/400px/22124"
     },
     {
         "level": "Level 2",
-        "time": 50,
+        "time": 2.3,
         "player": "Stina",
-        "image": "https://openclipart.org/image/400px/227472"
+        "image": "https://openclipart.org/image/400px/22129"
     },
     {
         "level": "Level 3",
-        "time": 68,
-        "player": "Filip",
-        "image": "https://openclipart.org/image/400px/314119"
-    },
-    {
-        "name": "Dog",
-        "time": 73,
+        "time": 2.8,
         "player": "Patrik",
-        "image": "https://openclipart.org/image/400px/17692"
+        "image": "https://openclipart.org/image/400px/22232"
     }
 ]
