@@ -102,6 +102,7 @@ const cardGenerator = () => {
                 flippedCards.forEach((card) => {
                     card.classList.remove("flipped");
                     card.style.pointerEvents ="none";
+                    card.classList.add("done")
                 });
 
             } else {
@@ -112,11 +113,30 @@ const cardGenerator = () => {
                 })
             }
         }
+        const allCards = document.querySelectorAll(".done");
+        if(allCards.length === 20){
+
+            console.log("Done! Congratulations!")
+            delay();
+            stopTimer();
+            
+        }
     }
 
-    
-    
+    let timeout;
 
+        function delay() {
+            timeout = setTimeout(modalFunc, 2000);
+        }
+
+        function modalFunc() {
+            const congrats = document.getElementById("modal")
+            congrats.classList.add('active')
+            }
+
+        function stopTimer () {
+            clearInterval(timerInterval);
+        }
 }
 
 cardGenerator();

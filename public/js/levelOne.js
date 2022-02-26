@@ -109,24 +109,39 @@ const cardGenerator = () => {
         const allCards = document.querySelectorAll(".done");
         if(allCards.length === 12){
 
-            //stop timer
-            
-            console.log("Done! Woho!")
-            myFunction();
+            console.log("Done! Congratulations!!!")
+            delay();
+            stopTimer();
+            // delay2();
             
         }
     }
 
     let timeout;
 
-            function myFunction() {
-            timeout = setTimeout(alertFunc, 2000);
+            function delay() {
+            timeout = setTimeout(modalFunc, 2000);
             }
 
-            function alertFunc() {
-            alert("Done! Woho!");
+            function modalFunc() {
+            const congrats = document.getElementById("modal")
+            congrats.classList.add('active')
             }
+            function delay2() {
+                timeout = setTimeout(alertFunc, 4000);
+                }
     
+            function alertFunc() {
+                //function som frågar efter user name och registrerar det till highscore
+
+                alert("Done! Congratulations!!!");
+            }
+
+
+
+    function stopTimer () {
+        clearInterval(timerInterval);
+    }
 
 }
 

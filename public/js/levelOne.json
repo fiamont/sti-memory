@@ -1,31 +1,25 @@
 [
     {
-        "id": 1,
         "name": "Butterfly",
         "image": "https://openclipart.org/image/400px/281767"
     },
     {
-        "id": 2,
         "name": "Cat",
         "image": "https://openclipart.org/image/400px/227472"
     },
     {
-        "id": 3,
         "name": "Dino",
         "image": "https://openclipart.org/image/400px/314119"
     },
     {
-        "id": 4,
         "name": "Dog",
         "image": "https://openclipart.org/image/400px/17692"
     },
     {
-        "id": 5,
         "name": "Hippo",
         "image": "https://openclipart.org/image/400px/22337"
     },
     {
-        "id": 6,
         "name": "Lion",
         "image": "https://openclipart.org/image/400px/335742"
     }
