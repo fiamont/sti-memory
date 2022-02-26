@@ -40,15 +40,41 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* margin-bottom: 3rem;
+  margin-top: 0; */
 }
 
 section {
   display: grid;
-  grid-template-columns: repeat(8, 5rem);
-  grid-template-rows: repeat(6, 5rem);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(8, 5.5rem);
+  grid-template-rows: repeat(4, 5.5rem);
+  grid-gap: 0.7rem;
   perspective: 800px;
+  margin-top: 0.1rem;
+  margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+  section {
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(8, 5rem);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section {
+    grid-template-columns: repeat(4, 3.5rem);
+    grid-template-rows: repeat(8, 3.5rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    grid-template-columns: repeat(4, 2rem);
+    grid-template-rows: repeat(8, 2rem);
+  }
+}
+
 .card {
   position: relative;
   transform-style: preserve-3d;
@@ -73,7 +99,8 @@ section {
 }
 
 #timer {
-  margin-bottom: 25px;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
   font-size: 3rem;
   font-weight: bold;
   color: #4c12a8;
