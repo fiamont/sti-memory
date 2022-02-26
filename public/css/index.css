@@ -37,7 +37,7 @@ h3 {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .container {
     flex-direction: column;
   }
@@ -52,6 +52,11 @@ img.tableImage {
   flex-direction: column;
   font-family: "Impact", "Charcoal", "sans-serif";
 }
+
+#fastestPlayerHeader {
+  color: white;
+}
+
 table,
 td {
   background-color: rgba(255, 187, 0, 0.685);

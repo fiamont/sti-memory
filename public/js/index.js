@@ -20,6 +20,7 @@ function createTable(data){
 
     var mainHeading = document.createElement("h3")
     mainHeading.innerHTML = "Fastest player"
+    mainHeading.id = "fastestPlayerHeader"
     appElement.appendChild(mainHeading)
 
     var aTable = document.createElement("table")
