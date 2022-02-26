@@ -1,4 +1,5 @@
 console.log("level1")
+
 const timer = document.getElementById('timer');
 let timerInterval;
 
@@ -26,13 +27,11 @@ window.onload = function startTimer() {
       }
     }, 1000);
 };
-
 const section = document.querySelector('section');
-//hämta data från json??: var cardArray = require('.data.json');
 
 //Generate data
 
-const getData = () =>[
+const getData = () => [
 
     {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
     {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
@@ -96,6 +95,7 @@ const cardGenerator = () => {
                 flippedCards.forEach((card) => {
                     card.classList.remove("flipped");
                     card.style.pointerEvents ="none";
+                    card.classList.add('done')
                 });
 
             } else {
@@ -106,9 +106,26 @@ const cardGenerator = () => {
                 })
             }
         }
+        const allCards = document.querySelectorAll(".done");
+        if(allCards.length === 12){
+
+            //stop timer
+            
+            console.log("Done! Woho!")
+            myFunction();
+            
+        }
     }
 
-    
+    let timeout;
+
+            function myFunction() {
+            timeout = setTimeout(alertFunc, 2000);
+            }
+
+            function alertFunc() {
+            alert("Done! Woho!");
+            }
     
 
 }

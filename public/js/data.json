@@ -1,18 +1,18 @@
 [
     {
-        "name": "Butterfly",
+        "level": "Level 1",
         "time": 56,
         "player": "Robert",
         "image": "https://openclipart.org/image/400px/281767"
     },
     {
-        "name": "Cat",
+        "level": "Level 2",
         "time": 50,
         "player": "Stina",
         "image": "https://openclipart.org/image/400px/227472"
     },
     {
-        "name": "Dino",
+        "level": "Level 3",
         "time": 68,
         "player": "Filip",
         "image": "https://openclipart.org/image/400px/314119"
@@ -22,65 +22,5 @@
         "time": 73,
         "player": "Patrik",
         "image": "https://openclipart.org/image/400px/17692"
-    },
-    {
-        "name": "Dolphin",
-        "image": "https://openclipart.org/image/400px/300661"
-    },
-    {
-        "name": "Elephant",
-        "image": "https://openclipart.org/image/400px/83479"
-    },
-    {
-        "name": "Frog",
-        "image": "https://openclipart.org/image/400px/169932"
-    },
-    {
-        "name": "Hippo",
-        "image": "https://openclipart.org/image/400px/22337"
-    },
-    {
-        "name": "Honeybee",
-        "image": "https://openclipart.org/image/400px/191898"
-    },
-    {
-        "name": "Horse",
-        "image": "https://openclipart.org/image/400px/170851"
-    },
-    {
-        "name": "Lion",
-        "image": "https://openclipart.org/image/400px/335742"
-    },
-    {
-        "name": "Mouse",
-        "image": "https://openclipart.org/image/400px/17558"
-    },
-    {
-        "name": "Owl",
-        "image": "https://openclipart.org/image/400px/168873"
-    },
-    {
-        "name": "Sloth",
-        "image": "https://openclipart.org/image/400px/335271"
-    },
-    {
-        "name": "Turtle",
-        "image": "https://openclipart.org/image/400px/173367"
-    },
-    {
-        "name": "Zebra",
-        "image": "https://openclipart.org/image/400px/314473"
-    },
-    {
-        "name": "MemoryIcon",
-        "image": "https://cdn-icons-png.flaticon.com/512/103/103228.png?w=740"
-    },
-    {
-        "name": "MainBackground",
-        "image": "https://img.freepik.com/free-vector/flat-comic-style-background_23-2148882944.jpg?t=st=1645743388~exp=1645743988~hmac=542ef864dc8f6dcb56a1f249c2b73fc1c313e8eefc5a41ff61ed63a1a83cd802&w=900"
-    },
-    {
-        "name": "LevelBackground",
-        "image": "https://img.freepik.com/free-vector/blue-sunburst-abstract-vintage-background_349999-40.jpg?w=900"
     }
 ]
