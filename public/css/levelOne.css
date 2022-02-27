@@ -46,7 +46,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 8rem);
   grid-template-rows: repeat(3, 8rem);
-  grid-gap: 2rem;
+  grid-gap: 1.5rem;
   perspective: 800px;
   margin-top: 0.1rem;
   margin-bottom: 2rem;
@@ -61,8 +61,8 @@ section {
 
 @media screen and (max-width: 480px) {
   section {
-    grid-template-columns: repeat(3, 4.5rem);
-    grid-template-rows: repeat(4, 4.5rem);
+    grid-template-columns: repeat(3, 4rem);
+    grid-template-rows: repeat(4, 4rem);
   }
 }
 
