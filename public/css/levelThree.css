@@ -70,8 +70,8 @@ section {
 
 @media screen and (max-width: 480px) {
   section {
-    grid-template-columns: repeat(4, 2rem);
-    grid-template-rows: repeat(8, 2rem);
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: repeat(8, 3rem);
   }
 }
 

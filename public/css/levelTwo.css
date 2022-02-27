@@ -61,8 +61,8 @@ section {
 
 @media screen and (max-width: 480px) {
   section {
-    grid-template-columns: repeat(2, 4rem);
-    grid-template-rows: repeat(10, 4rem);
+    grid-template-columns: repeat(4, 3.5rem);
+    grid-template-rows: repeat(5, 3.5rem);
   }
 }
 
