@@ -32,38 +32,38 @@ const section = document.querySelector('section');
 
 //Generate data
 const getData = () => [
-    {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
-    {imgScr: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
-    {imgScr: "https://openclipart.org/image/400px/227472", name: "Cat"},
-    {imgScr: "https://openclipart.org/image/400px/227472", name: "Cat"},
-    {imgScr: "https://openclipart.org/image/400px/314119", name: "Dino"},
-    {imgScr: "https://openclipart.org/image/400px/314119", name: "Dino"},
-    {imgScr: "https://openclipart.org/image/400px/17692", name: "Dog"},
-    {imgScr: "https://openclipart.org/image/400px/17692", name: "Dog"},
-    {imgScr: "https://openclipart.org/image/400px/300661", name: "Dolphin"},
-    {imgScr: "https://openclipart.org/image/400px/300661", name: "Dolphin"},
-    {imgScr: "https://openclipart.org/image/400px/83479", name: "Elephant"},
-    {imgScr: "https://openclipart.org/image/400px/83479", name: "Elephant"},
-    {imgScr: "https://openclipart.org/image/400px/169932", name: "Frog"},
-    {imgScr: "https://openclipart.org/image/400px/169932", name: "Frog"},
-    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {imgScr: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
-    {imgScr: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
-    {imgScr: "https://openclipart.org/image/400px/170851", name: "Horse"},
-    {imgScr: "https://openclipart.org/image/400px/170851", name: "Horse"},
-    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
-    {imgScr: "https://openclipart.org/image/400px/335742", name: "Lion"},
-    {imgScr: "https://openclipart.org/image/400px/17558", name: "Mouse"},
-    {imgScr: "https://openclipart.org/image/400px/17558", name: "Mouse"},
-    {imgScr: "https://openclipart.org/image/400px/168873", name: "Owl"},
-    {imgScr: "https://openclipart.org/image/400px/168873", name: "Owl"},
-    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
-    {imgScr: "https://openclipart.org/image/400px/335271", name: "Sloth"},
-    {imgScr: "https://openclipart.org/image/400px/173367", name: "Turtle"},
-    {imgScr: "https://openclipart.org/image/400px/173367", name: "Turtle"},
-    {imgScr: "https://openclipart.org/image/400px/314473", name: "Zebra"},
-    {imgScr: "https://openclipart.org/image/400px/314473", name: "Zebra"}
+    {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
+    {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
+    {image: "https://openclipart.org/image/400px/227472", name: "Cat"},
+    {image: "https://openclipart.org/image/400px/227472", name: "Cat"},
+    {image: "https://openclipart.org/image/400px/314119", name: "Dino"},
+    {image: "https://openclipart.org/image/400px/314119", name: "Dino"},
+    {image: "https://openclipart.org/image/400px/17692", name: "Dog"},
+    {image: "https://openclipart.org/image/400px/17692", name: "Dog"},
+    {image: "https://openclipart.org/image/400px/300661", name: "Dolphin"},
+    {image: "https://openclipart.org/image/400px/300661", name: "Dolphin"},
+    {image: "https://openclipart.org/image/400px/83479", name: "Elephant"},
+    {image: "https://openclipart.org/image/400px/83479", name: "Elephant"},
+    {image: "https://openclipart.org/image/400px/169932", name: "Frog"},
+    {image: "https://openclipart.org/image/400px/169932", name: "Frog"},
+    {image: "https://openclipart.org/image/400px/22337", name: "Hippo"},
+    {image: "https://openclipart.org/image/400px/22337", name: "Hippo"},
+    {image: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
+    {image: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
+    {image: "https://openclipart.org/image/400px/170851", name: "Horse"},
+    {image: "https://openclipart.org/image/400px/170851", name: "Horse"},
+    {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
+    {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
+    {image: "https://openclipart.org/image/400px/17558", name: "Mouse"},
+    {image: "https://openclipart.org/image/400px/17558", name: "Mouse"},
+    {image: "https://openclipart.org/image/400px/168873", name: "Owl"},
+    {image: "https://openclipart.org/image/400px/168873", name: "Owl"},
+    {image: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {image: "https://openclipart.org/image/400px/335271", name: "Sloth"},
+    {image: "https://openclipart.org/image/400px/173367", name: "Turtle"},
+    {image: "https://openclipart.org/image/400px/173367", name: "Turtle"},
+    {image: "https://openclipart.org/image/400px/314473", name: "Zebra"},
+    {image: "https://openclipart.org/image/400px/314473", name: "Zebra"}
 ];
 //Randomize
 const randomize = () => {
@@ -84,7 +84,7 @@ const cardGenerator = () => {
         face.classList = "face";
         back.classList = "back";
         //attach the info to the cards
-        face.src = item.imgScr;
+        face.src = item.image;
         card.setAttribute("name", item.name);
         //attach the cards to the section
         section.appendChild(card);
