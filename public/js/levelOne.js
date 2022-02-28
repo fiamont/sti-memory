@@ -2,8 +2,26 @@ console.log("level1")
 
 const timer = document.getElementById('timer');
 let timerInterval;
+let myData = [];
+
+//get data from json
+function generateGetData () {
+    let xhr = new XMLHttpRequest()
+    xhr.open("GET", "/js/level.json", true)
+    xhr.onload = function() {
+        let data = JSON.parse(this.response);
+        let myData = [];
+        for(i = 0; i <6; i++){
+            myData.push(data[i]);
+            myData.push(data[i]);
+        }
+        console.log(myData);          
+    }
+    xhr.send();
+}
 
 window.onload = function startTimer() {
+    generateGetData()
     clearInterval(timerInterval);
     let second = 0,
       minute = 0,
@@ -29,43 +47,17 @@ window.onload = function startTimer() {
 };
 const section = document.querySelector('section');
 
-//Generate data
 
-const getData = () => {
-    var xhr = new XMLHttpRequest()
-    // xhr.open("GET", "http://localhost:3001/highscore")
-    //xhr.open("GET", "http://fiamont-backend.herokuapp.com/highscore")
-    xhr.open("GET", "/js/levelOne.json")
-    xhr.onload = function() {
-        var data = JSON.parse(this.response);
-        return data;
-    
-    }
-    xhr.send(xhr.onload);
+//get data
+function getData(){
+    return myData;
 }
-
-/* const getData = () => [
-
-    {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
-    {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
-    {image: "https://openclipart.org/image/400px/227472", name: "Cat"},
-    {image: "https://openclipart.org/image/400px/227472", name: "Cat"},
-    {image: "https://openclipart.org/image/400px/314119", name: "Dino"},
-    {image: "https://openclipart.org/image/400px/314119", name: "Dino"},
-    {image: "https://openclipart.org/image/400px/17692", name: "Dog"},
-    {image: "https://openclipart.org/image/400px/17692", name: "Dog"},
-    {image: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {image: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
-    {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
-]; */
 
 //Randomize
 const randomize = () => {
-    const cardData = getData();
+    const cardData = myData;
     cardData.sort(() => Math.random() - 0.5)
     return cardData;
-
 }
 
 //Cardgenerator function
