@@ -46,19 +46,9 @@ function age(){
 function createSection(data){
     var appElement = document.getElementById("levelOne")
 
-    
-    appElement.appendChild(createImage(data[0].image, data[0].name))
-    appElement.appendChild(createImage(data[1].image, data[1].name))
-    appElement.appendChild(createImage(data[2].image, data[2].name))
-    appElement.appendChild(createImage(data[3].image, data[3].name))
-    appElement.appendChild(createImage(data[4].image, data[4].name))
-    appElement.appendChild(createImage(data[5].image, data[5].name))
-    appElement.appendChild(createImage(data[0].image, data[0].name))
-    appElement.appendChild(createImage(data[1].image, data[1].name))
-    appElement.appendChild(createImage(data[2].image, data[2].name))
-    appElement.appendChild(createImage(data[3].image, data[3].name))
-    appElement.appendChild(createImage(data[4].image, data[4].name))
-    appElement.appendChild(createImage(data[5].image, data[5].name))
+    for(i=0;i<12;i++){
+      appElement.appendChild(createImage(data[i].image, data[i].name))
+    }
 
 }
 function createImage(url, name){

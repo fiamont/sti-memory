@@ -31,7 +31,20 @@ const section = document.querySelector('section');
 
 //Generate data
 
-const getData = () => [
+const getData = () => {
+    var xhr = new XMLHttpRequest()
+    // xhr.open("GET", "http://localhost:3001/highscore")
+    //xhr.open("GET", "http://fiamont-backend.herokuapp.com/highscore")
+    xhr.open("GET", "/js/levelOne.json")
+    xhr.onload = function() {
+        var data = JSON.parse(this.response);
+        return data;
+    
+    }
+    xhr.send(xhr.onload);
+}
+
+/* const getData = () => [
 
     {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
     {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
@@ -45,7 +58,7 @@ const getData = () => [
     {image: "https://openclipart.org/image/400px/22337", name: "Hippo"},
     {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
     {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
-];
+]; */
 
 //Randomize
 const randomize = () => {
