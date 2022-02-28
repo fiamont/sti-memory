@@ -5,23 +5,22 @@ let timerInterval;
 let myData = [];
 
 //get data from json
-function generateGetData () {
+const generateGetData = () => {
     let xhr = new XMLHttpRequest()
-    xhr.open("GET", "/js/level.json", true)
-    xhr.onload = function() {
-        let data = JSON.parse(this.response);
-        let myData = [];
-        for(i = 0; i <6; i++){
-            myData.push(data[i]);
-            myData.push(data[i]);
-        }
-        console.log(myData);          
-    }
+    xhr.open("GET", "http://localhost:3001/levelOne", false)
     xhr.send();
+    let data = JSON.parse(xhr.response);
+    myData = [];
+    for(i = 0; i <6; i++){
+        myData.push(data[i]);
+        myData.push(data[i]);
+    }        
+    console.log("AJAX Run")
+    console.log(myData)
 }
 
 window.onload = function startTimer() {
-    generateGetData()
+    
     clearInterval(timerInterval);
     let second = 0,
       minute = 0,
@@ -45,6 +44,8 @@ window.onload = function startTimer() {
       }
     }, 1000);
 };
+
+
 const section = document.querySelector('section');
 
 
@@ -55,7 +56,7 @@ function getData(){
 
 //Randomize
 const randomize = () => {
-    const cardData = myData;
+    const cardData = getData();
     cardData.sort(() => Math.random() - 0.5)
     return cardData;
 }
@@ -149,6 +150,7 @@ const cardGenerator = () => {
     }
 
 }
-
+generateGetData();
+//console.log(myData);
 cardGenerator();
 

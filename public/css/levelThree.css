@@ -90,6 +90,8 @@ section {
 }
 
 .back {
+  background-image: url("https://img.freepik.com/free-vector/comic-style-background-flat-design_52683-53320.jpg?w=900");
+  background-size: cover;
   background-color: rgb(48, 184, 252);
   backface-visibility: hidden;
 }
