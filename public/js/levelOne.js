@@ -7,7 +7,7 @@ let myData = [];
 //get data from json
 const generateGetData = () => {
     let xhr = new XMLHttpRequest()
-    xhr.open("GET", "http://fiamont-backend.herokuapp.com/levelOne", false)
+    xhr.open("GET", "https://fiamont-backend.herokuapp.com/levelOne", false)
     //xhr.open("GET", "http://localhost:3001/levelOne", false)
     xhr.send();
     let data = JSON.parse(xhr.response);
