@@ -113,26 +113,38 @@ const cardGenerator = () => {
             console.log("Done! Congratulations!")
             delay();
             stopTimer();
+            delay2();
             
         }
     }
 
-    let timeout;
 
-        function delay() {
-        timeout = setTimeout(modalFunc, 2000);
-        }
+    let name;
+    let stopedTime;
 
-        function modalFunc() {
-        const congrats = document.getElementById("modal")
-        congrats.classList.add('active')
-        }
-        function stopTimer () {
-            clearInterval(timerInterval);
-        }
+            function delay() {
+            timeout = setTimeout(modalFunc, 1500);
+            }
+
+            function modalFunc() {
+            const congrats = document.getElementById("modal")
+            congrats.classList.add('active')
+            }
+            function delay2() {
+                timeout = setTimeout(alertFunc, 3000);
+                }
+    
+            function alertFunc() {
+                name = window.prompt("Enter name to save your time to highscore!:");
+                console.log(name)
+            }
+
+    function stopTimer () {
+        clearInterval(timerInterval);
+        stopedTime = timer.innerHTML;
+        console.log(stopedTime);
+    }
+
 }
-
 generateGetData();
 cardGenerator();
-
-

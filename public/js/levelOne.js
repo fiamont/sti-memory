@@ -118,15 +118,17 @@ const cardGenerator = () => {
             console.log("Done! Congratulations!!!")
             delay();
             stopTimer();
-            // delay2();
+            delay2();
             
         }
     }
 
-    let timeout;
+
+    let name;
+    let stopedTime;
 
             function delay() {
-            timeout = setTimeout(modalFunc, 2000);
+            timeout = setTimeout(modalFunc, 1500);
             }
 
             function modalFunc() {
@@ -134,19 +136,18 @@ const cardGenerator = () => {
             congrats.classList.add('active')
             }
             function delay2() {
-                timeout = setTimeout(alertFunc, 4000);
+                timeout = setTimeout(alertFunc, 3000);
                 }
     
             function alertFunc() {
-                //function som frågar efter user name och registrerar det till highscore
-
-                alert("Done! Congratulations!!!");
+                name = window.prompt("Enter name to save your time to highscore!:");
+                console.log(name)
             }
-
-
 
     function stopTimer () {
         clearInterval(timerInterval);
+        stopedTime = timer.innerHTML;
+        console.log(stopedTime);
     }
 
 }

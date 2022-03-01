@@ -1,4 +1,4 @@
-console.log("homepage")
+console.log("fastestPlayer")
 
 age();
 
@@ -26,7 +26,10 @@ function createTable(data){
     var aTable = document.createElement("table")
     appElement.appendChild(aTable)
     aTable.appendChild(createRow(data[0].level, data[0].time, data[0].player, data[0].image))
+    aTable.appendChild(createRow(data[0].level, data[0].time, data[0].player, data[0].image))
     aTable.appendChild(createRow(data[1].level, data[1].time, data[1].player, data[1].image))
+    aTable.appendChild(createRow(data[1].level, data[1].time, data[1].player, data[1].image))
+    aTable.appendChild(createRow(data[2].level, data[2].time, data[2].player, data[2].image))
     aTable.appendChild(createRow(data[2].level, data[2].time, data[2].player, data[2].image))
 
 }
