@@ -1,6 +1,22 @@
 console.log("level2")
 const timer = document.getElementById('timer');
 let timerInterval;
+let myData = [];
+
+//get data from json
+const generateGetData = () => {
+    let xhr = new XMLHttpRequest()
+    xhr.open("GET", "http://localhost:3001/levelTwo", false)
+    xhr.send();
+    let data = JSON.parse(xhr.response);
+    myData = [];
+    for(i = 0; i <10; i++){
+        myData.push(data[i]);
+        myData.push(data[i]);
+    }        
+    console.log("AJAX Run")
+    console.log(myData)
+}
 
 window.onload = function startTimer() {
     clearInterval(timerInterval);
@@ -29,30 +45,10 @@ window.onload = function startTimer() {
 
 const section = document.querySelector('section');
 
-//Generate data
-
-const getData = () =>[
-    {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
-    {image: "https://openclipart.org/image/400px/281767", name: "Butterfly"},
-    {image: "https://openclipart.org/image/400px/227472", name: "Cat"},
-    {image: "https://openclipart.org/image/400px/227472", name: "Cat"},
-    {image: "https://openclipart.org/image/400px/314119", name: "Dino"},
-    {image: "https://openclipart.org/image/400px/314119", name: "Dino"},
-    {image: "https://openclipart.org/image/400px/17692", name: "Dog"},
-    {image: "https://openclipart.org/image/400px/17692", name: "Dog"},
-    {image: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {image: "https://openclipart.org/image/400px/22337", name: "Hippo"},
-    {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
-    {image: "https://openclipart.org/image/400px/335742", name: "Lion"},
-    {image: "https://openclipart.org/image/400px/335271", name: "Sloth"},
-    {image: "https://openclipart.org/image/400px/335271", name: "Sloth"},
-    {image: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
-    {image: "https://openclipart.org/image/400px/191898", name: "Honeybee"},
-    {image: "https://openclipart.org/image/400px/168873", name: "Owl"},
-    {image: "https://openclipart.org/image/400px/168873", name: "Owl"},
-    {image: "https://openclipart.org/image/400px/169932", name: "Frog"},
-    {image: "https://openclipart.org/image/400px/169932", name: "Frog"},
-];
+//get data
+function getData(){
+    return myData;
+}
 
 //Randomize
 const randomize = () => {
@@ -139,5 +135,6 @@ const cardGenerator = () => {
         }
 }
 
+generateGetData();
 cardGenerator();
 

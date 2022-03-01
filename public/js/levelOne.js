@@ -151,6 +151,5 @@ const cardGenerator = () => {
 
 }
 generateGetData();
-//console.log(myData);
 cardGenerator();
 
