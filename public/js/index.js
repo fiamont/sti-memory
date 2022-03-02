@@ -9,7 +9,7 @@ function age(){
     //xhr.open("GET", "/js/data.json")
     xhr.onload = function() {
         var data = JSON.parse(this.response);
-        createTable(data);
+        //createTable(data);
     
     }
     xhr.send();
