@@ -114,7 +114,7 @@ const cardGenerator = () => {
             console.log("Done! Congratulations!")
             delay();
             stopTimer();
-            delay2();
+            //delay2();
             
         }
     }
