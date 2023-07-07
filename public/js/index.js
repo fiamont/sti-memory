@@ -5,8 +5,8 @@ age();
 function age(){
     var xhr = new XMLHttpRequest()
     //xhr.open("GET", "http://localhost:3001/fastestPlayer")
-    xhr.open("GET", "https://fiamont-backend.herokuapp.com/fastestPlayer")
-    //xhr.open("GET", "/js/data.json")
+    //xhr.open("GET", "https://fiamont-backend.herokuapp.com/fastestPlayer")
+    xhr.open("GET", "/js/data.json")
     xhr.onload = function() {
         var data = JSON.parse(this.response);
         //createTable(data);
