@@ -1,4 +1,4 @@
-# sti-frontend
+# STI-Memory
 
 A game of Memory! With JavaScript, HTML and CSS.
 
