@@ -5,8 +5,8 @@
 }
 
 html {
-  background: url("https://img.freepik.com/free-vector/blue-sunburst-abstract-vintage-background_349999-40.jpg?w=900")
-    no-repeat center center fixed;
+  background: url("/public/images/backgroundLevels.jpg") no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -40,8 +40,6 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-bottom: 3rem;
-  margin-top: 0; */
 }
 
 section {
@@ -90,7 +88,7 @@ section {
 }
 
 .back {
-  background-image: url("https://img.freepik.com/free-vector/comic-style-background-flat-design_52683-53320.jpg?w=900");
+  background-image: url("/public/images/backLevelThree.jpg");
   background-size: cover;
   background-color: rgb(48, 184, 252);
   backface-visibility: hidden;

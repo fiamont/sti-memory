@@ -3,23 +3,6 @@ const timer = document.getElementById("timer");
 let timerInterval;
 let myData = [];
 
-//get data from json
-/* const generateGetData = () => {
-  let xhr = new XMLHttpRequest();
-  xhr.open("GET", "/js/level.json");
-  //xhr.open("GET", "https://fiamont-backend.herokuapp.com/levelTwo", false)
-  //xhr.open("GET", "http://localhost:3001/levelTwo", false)
-  xhr.send();
-  let data = JSON.parse(xhr.response);
-  myData = [];
-  for (i = 0; i < 10; i++) {
-    myData.push(data[i]);
-    myData.push(data[i]);
-  }
-  console.log("AJAX Run");
-  console.log(myData);
-}; */
-
 window.onload = function startTimer() {
   clearInterval(timerInterval);
   let second = 0,
@@ -51,83 +34,83 @@ const section = document.querySelector("section");
 const getData = () => [
   {
     name: "Butterfly",
-    image: "https://openclipart.org/image/400px/281767",
+    image: "/public/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "https://openclipart.org/image/400px/227472",
+    image: "/public/images/cat.png",
   },
   {
     name: "Dino",
-    image: "https://openclipart.org/image/400px/314119",
+    image: "/public/images/dino.png",
   },
   {
     name: "Dog",
-    image: "https://openclipart.org/image/400px/17692",
+    image: "/public/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "https://openclipart.org/image/400px/300661",
+    image: "/public/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "https://openclipart.org/image/400px/83479",
+    image: "/public/images/elephant.png",
   },
   {
     name: "Frog",
-    image: "https://openclipart.org/image/400px/169932",
+    image: "/public/images/frog.png",
   },
   {
     name: "Hippo",
-    image: "https://openclipart.org/image/400px/22337",
+    image: "/public/images/hippo.png",
   },
   {
     name: "Honeybee",
-    image: "https://openclipart.org/image/400px/191898",
+    image: "/public/images/honeybee.png",
   },
   {
     name: "Horse",
-    image: "https://openclipart.org/image/400px/170851",
+    image: "/public/images/horse.png",
   },
   {
     name: "Butterfly",
-    image: "https://openclipart.org/image/400px/281767",
+    image: "/public/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "https://openclipart.org/image/400px/227472",
+    image: "/public/images/cat.png",
   },
   {
     name: "Dino",
-    image: "https://openclipart.org/image/400px/314119",
+    image: "/public/images/dino.png",
   },
   {
     name: "Dog",
-    image: "https://openclipart.org/image/400px/17692",
+    image: "/public/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "https://openclipart.org/image/400px/300661",
+    image: "/public/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "https://openclipart.org/image/400px/83479",
+    image: "/public/images/elephant.png",
   },
   {
     name: "Frog",
-    image: "https://openclipart.org/image/400px/169932",
+    image: "/public/images/frog.png",
   },
   {
     name: "Hippo",
-    image: "https://openclipart.org/image/400px/22337",
+    image: "/public/images/hippo.png",
   },
   {
     name: "Honeybee",
-    image: "https://openclipart.org/image/400px/191898",
+    image: "/public/images/honeybee.png",
   },
   {
     name: "Horse",
-    image: "https://openclipart.org/image/400px/170851",
+    image: "/public/images/horse.png",
   },
 ];
 

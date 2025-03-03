@@ -4,23 +4,6 @@ const timer = document.getElementById("timer");
 let timerInterval;
 let myData = [];
 
-//get data from json
-/* const generateGetData = () => {
-  let xhr = new XMLHttpRequest();
-  xhr.open("GET", "../js/level.json");
-  //xhr.open("GET", "https://fiamont-backend.herokuapp.com/levelOne", false)
-  //xhr.open("GET", "http://localhost:3001/levelOne", false)
-  xhr.send();
-  let data = JSON.parse(xhr.response);
-  myData = [];
-  for (i = 0; i < 6; i++) {
-    myData.push(data[i]);
-    myData.push(data[i]);
-  }
-  console.log("AJAX Run");
-  console.log(myData);
-}; */
-
 window.onload = function startTimer() {
   clearInterval(timerInterval);
   let second = 0,
@@ -52,51 +35,51 @@ const section = document.querySelector("section");
 const getData = () => [
   {
     name: "Butterfly",
-    image: "https://openclipart.org/image/400px/281767",
+    image: "/public/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "https://openclipart.org/image/400px/227472",
+    image: "/public/images/cat.png",
   },
   {
     name: "Dino",
-    image: "https://openclipart.org/image/400px/314119",
+    image: "/public/images/dino.png",
   },
   {
     name: "Dog",
-    image: "https://openclipart.org/image/400px/17692",
+    image: "/public/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "https://openclipart.org/image/400px/300661",
+    image: "/public/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "https://openclipart.org/image/400px/83479",
+    image: "/public/images/elephant.png",
   },
   {
     name: "Butterfly",
-    image: "https://openclipart.org/image/400px/281767",
+    image: "/public/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "https://openclipart.org/image/400px/227472",
+    image: "/public/images/cat.png",
   },
   {
     name: "Dino",
-    image: "https://openclipart.org/image/400px/314119",
+    image: "/public/images/dino.png",
   },
   {
     name: "Dog",
-    image: "https://openclipart.org/image/400px/17692",
+    image: "/public/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "https://openclipart.org/image/400px/300661",
+    image: "/public/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "https://openclipart.org/image/400px/83479",
+    image: "/public/images/elephant.png",
   },
 ];
 
@@ -164,11 +147,9 @@ const cardGenerator = () => {
       console.log("Done! Congratulations!!!");
       delay();
       stopTimer();
-      //delay2();
     }
   };
 
-  let name;
   let stopedTime;
 
   function delay() {
@@ -178,14 +159,6 @@ const cardGenerator = () => {
   function modalFunc() {
     const congrats = document.getElementById("modal");
     congrats.classList.add("active");
-  }
-  function delay2() {
-    timeout = setTimeout(alertFunc, 3000);
-  }
-
-  function alertFunc() {
-    name = window.prompt("Enter name to save your time to highscore!:");
-    console.log(name);
   }
 
   function stopTimer() {
