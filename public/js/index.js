@@ -1,16 +1,3 @@
-console.log("fastestPlayer");
-
-age();
-
-function age() {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "/js/data.json");
-  //   xhr.onload = function () {
-  //     var data = JSON.parse(this.response);
-  //   };
-  //   xhr.send();
-}
-
 function createTable(data) {
   var appElement = document.getElementById("fastestPlayer");
 
