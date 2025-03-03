@@ -35,131 +35,131 @@ const section = document.querySelector("section");
 const getData = () => [
   {
     name: "Butterfly",
-    image: "/public/images/butterfly.png",
+    image: "/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "/public/images/cat.png",
+    image: "/images/cat.png",
   },
   {
     name: "Dino",
-    image: "/public/images/dino.png",
+    image: "/images/dino.png",
   },
   {
     name: "Dog",
-    image: "/public/images/dog.png",
+    image: "/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "/public/images/dolphin.png",
+    image: "/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "/public/images/elephant.png",
+    image: "/images/elephant.png",
   },
   {
     name: "Frog",
-    image: "/public/images/frog.png",
+    image: "/images/frog.png",
   },
   {
     name: "Hippo",
-    image: "/public/images/hippo.png",
+    image: "/images/hippo.png",
   },
   {
     name: "Honeybee",
-    image: "/public/images/honeybee.png",
+    image: "/images/honeybee.png",
   },
   {
     name: "Horse",
-    image: "/public/images/horse.png",
+    image: "/images/horse.png",
   },
   {
     name: "Lion",
-    image: "/public/images/lion.png",
+    image: "/images/lion.png",
   },
   {
     name: "Mouse",
-    image: "/public/images/mouse.png",
+    image: "/images/mouse.png",
   },
   {
     name: "Owl",
-    image: "/public/images/owl.png",
+    image: "/images/owl.png",
   },
   {
     name: "Sloth",
-    image: "/public/images/sloth.png",
+    image: "/images/sloth.png",
   },
   {
     name: "Turtle",
-    image: "/public/images/turtle.png",
+    image: "/images/turtle.png",
   },
   {
     name: "Zebra",
-    image: "/public/images/zebra.png",
+    image: "/images/zebra.png",
   },
   {
     name: "Butterfly",
-    image: "/public/images/butterfly.png",
+    image: "/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "/public/images/cat.png",
+    image: "/images/cat.png",
   },
   {
     name: "Dino",
-    image: "/public/images/dino.png",
+    image: "/images/dino.png",
   },
   {
     name: "Dog",
-    image: "/public/images/dog.png",
+    image: "/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "/public/images/dolphin.png",
+    image: "/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "/public/images/elephant.png",
+    image: "/images/elephant.png",
   },
   {
     name: "Frog",
-    image: "/public/images/frog.png",
+    image: "/images/frog.png",
   },
   {
     name: "Hippo",
-    image: "/public/images/hippo.png",
+    image: "/images/hippo.png",
   },
   {
     name: "Honeybee",
-    image: "/public/images/honeybee.png",
+    image: "/images/honeybee.png",
   },
   {
     name: "Horse",
-    image: "/public/images/horse.png",
+    image: "/images/horse.png",
   },
   {
     name: "Lion",
-    image: "/public/images/lion.png",
+    image: "/images/lion.png",
   },
   {
     name: "Mouse",
-    image: "/public/images/mouse.png",
+    image: "/images/mouse.png",
   },
   {
     name: "Owl",
-    image: "/public/images/owl.png",
+    image: "/images/owl.png",
   },
   {
     name: "Sloth",
-    image: "/public/images/sloth.png",
+    image: "/images/sloth.png",
   },
   {
     name: "Turtle",
-    image: "/public/images/turtle.png",
+    image: "/images/turtle.png",
   },
   {
     name: "Zebra",
-    image: "/public/images/zebra.png",
+    image: "/images/zebra.png",
   },
 ];
 

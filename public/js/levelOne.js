@@ -35,51 +35,51 @@ const section = document.querySelector("section");
 const getData = () => [
   {
     name: "Butterfly",
-    image: "/public/images/butterfly.png",
+    image: "/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "/public/images/cat.png",
+    image: "/images/cat.png",
   },
   {
     name: "Dino",
-    image: "/public/images/dino.png",
+    image: "/images/dino.png",
   },
   {
     name: "Dog",
-    image: "/public/images/dog.png",
+    image: "/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "/public/images/dolphin.png",
+    image: "/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "/public/images/elephant.png",
+    image: "/images/elephant.png",
   },
   {
     name: "Butterfly",
-    image: "/public/images/butterfly.png",
+    image: "/images/butterfly.png",
   },
   {
     name: "Cat",
-    image: "/public/images/cat.png",
+    image: "/images/cat.png",
   },
   {
     name: "Dino",
-    image: "/public/images/dino.png",
+    image: "/images/dino.png",
   },
   {
     name: "Dog",
-    image: "/public/images/dog.png",
+    image: "/images/dog.png",
   },
   {
     name: "Dolphin",
-    image: "/public/images/dolphin.png",
+    image: "/images/dolphin.png",
   },
   {
     name: "Elephant",
-    image: "/public/images/elephant.png",
+    image: "/images/elephant.png",
   },
 ];
 
